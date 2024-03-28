@@ -1,0 +1,14 @@
+[
+
+        {
+            "title": "Home",
+            "icon":"bi bi-house-door",
+            "path":"/home"
+        },
+       
+        {
+            "title": "Customers",
+            "icon":"bi-person",
+            "path":"/Customer"
+        }
+    ]   

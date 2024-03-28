@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<link rel = "stylesheet"  type = "text/css"  href = "main.css" />
+<script type = "text/javascript" src = "main.js"></script>
+<title>NTAP</title>
+</head>
+<body onload = "onBodyLoad()" style="overflow-y: hidden;">
+<div id="AppContainer">
+<div id="header">
+<p>
+    <h1 style="font-size: 12px;">Please Authenticate your Fingerscan <span id="usernameSpan"></span></h1>
+</p>
+</div>
+
+<div style="display: flex;">
+<div>
+  <h2 style="margin-bottom: 0px;font-size: 12px;">Fingers</h2>
+<Select style="font-size: 11px;" labelId="demo-controlled-open-select-label" id="demo-controlled-open-select" open={open} onClose={handleClose} onOpen={handleOpen} value={age} label="Finger"> 
+  <option value={0}></option>
+  <option value={10}>Left-Thumb</option>
+    <option value={20}>Left-Index</option>
+    <option value={30}>Left-Middle</option>
+    <option value={40}>Left-Ring</option>
+    <option value={50}>Left-Pinky</option>
+    <option value={60}>Right-Thumb</option>
+    <option value={70}>Right-Index</option>
+    <option value={80}>Right-Middle</option>
+    <option value={90}>Right-Ring</option>
+    <option value={100}>Right-Pinky</option>
+</Select>
+</div>
+<div  className='hand-selection' id= 'handSelection' style="padding-left: 180px;">
+               <h2 style="margin-bottom: 0px;font-size: 12px;">Hand Selection</h2>
+               <form >
+                <label style="font-size: 11px;">
+                   <input  id="Lradio" type='radio' name='canvasSelection' value='left' id="radioLeft"  checked />
+                     Left
+                </label>
+                <label style="font-size: 11px;">
+                   <input  id="Fradio" type='radio' name='canvasSelection' value='front' id="radioFront"  />
+                      Front
+               </label>
+               <label style="font-size: 11px;">
+                   <input  id="Rradio"  type='radio' name='canvasSelection' value='right' id="radioRight"   />
+                       Right
+                </label>
+              </form>
+             </div>
+            </div>
+            <div style="display: flex;">
+<div id="controls">
+<div id="buttons">
+<form action = "">
+     <input style="font-size: 11px" type = "button" value = "Capture Frame" class="buttonLeft"  id="CaptureBtn"  disabled onclick="beginOperation('capture', 'ansisdk', false)"/>
+    <input style="font-size: 11px" type = "button" value = "Cancel" class="buttonLeft" id="CancelBtn" disabled onclick="cancelOperation()" />
+</form>
+</div>
+<div id="operationParams">
+<form action = "">
+    <input style="font-size: 12px;display: none;" type="checkbox" name="isoconv" value="0" id="ConvIsoCheckBox"><label style="display: none;">Convert ANSI to ISO</label><br>
+   <label style="display: none;"> Samples in FTRAPI template: </label><input style="font-size: 12px;display: none;" type="number" class="controlList"id="sampleNumList" value="5"/>
+</form>
+</div>
+</div>
+<div style="padding: 68px 100px 0px 320px;font-size: 11px;"><input type = "button" value = "Send" class="buttonLeft" id="Send" disabled /></div></div>
+<div id="image" style="display: flex;justify-content: space-between;">
+        <canvas id="fingerframe" height="480" width="320" style="margin: 20px;background-color: black;height: 380px;"></canvas>
+        <canvas id="fingerframe1" height="480" width="320" style="margin: 20px;background-color: black;height: 380px;"></canvas>
+        <canvas id="fingerframe2" height="480" width="320" style="margin: 20px;background-color: black;height: 380px;"></canvas>
+<!-- <img src="C:\Users\RajakumariP\Downloads\fpimage.png" /> -->
+</div>
+<div id="footer">
+    <p id="result"></p>
+</div>
+<div id="resultLinks">
+    <a id="resultLink" href="http://www.futronic-tech.com" rel="external" media="Jpeg">www.futronic-tech.com</a>
+</div>
+</div>
+</body>
+</html>

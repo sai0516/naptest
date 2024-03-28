@@ -1,0 +1,106 @@
+ @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+  
+#controls {
+    float: left;
+    width: 21em;
+}
+#buttons {
+    clear: left;
+    float: left;
+    width: 20em;
+}
+#image {
+    float: left;
+    min-height: 380px;
+    min-width: 320px;
+}
+#image1 {
+    float: right;
+    min-height: 480px;
+    min-width: 320px;
+}
+#footer {
+    clear: both;
+    text-align: left;
+    padding-left: 2em;
+}
+#resultLinks {
+    clear: both;
+    text-align: left;
+    padding-left: 2em;
+}
+
+#operationParams {
+    clear: left;
+    text-align: left;
+    margin-top: 2em;
+    padding-top: 1em;
+    margin-left: 3em;
+}
+
+.Left {
+    clear: left;
+    float: left;
+    margin-top: 1em;
+    margin-left: 3em;
+    margin-bottom: 1em;
+}
+
+.buttonLeft {
+    clear: left;
+    float: left;
+    width: 12em;
+    margin-left: 3em;
+    margin-top: 1em;
+}
+.buttonRight {
+    width: 12em;
+    margin-left: 3em;
+    margin-top: 1em;
+}
+.buttonCenter {
+    width: 12em;
+    margin-left: 9em;
+    margin-top: 1em;
+    clear: both;
+    float: left
+}
+.controlLeft {
+    clear: both;
+    float: left;
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+
+.controlList {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    max-width: 50px;
+    clear: right
+}
+#search{
+    display: flex;
+    justify-content: start;
+}
+#search input{
+    width: 50%;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 11px;
+}
+#search span{
+    font-size: x-large;
+}
+#CaptureBtn,
+#CancelBtn,
+#fingerframe,
+#fingerframe1,
+#fingerframe2,
+#Send,
+#footer,
+#handSelection,
+#resultLinks {
+  display: none;
+}
