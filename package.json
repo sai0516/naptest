@@ -1,6 +1,9 @@
 {
   "name": "azure-ad",
   "version": "0.1.0",
+  "engines": {
+    "node": "18"
+  },
   "private": true,
   "dependencies": {
     "@azure/msal-browser": "^3.1.0",
@@ -43,7 +46,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "CI=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
